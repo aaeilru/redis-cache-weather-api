@@ -119,37 +119,7 @@ print("Cache akan expired otomatis setelah 300 detik atau 5 menit.")
 
 Hasil testing menunjukkan bahwa pemanggilan pertama membutuhkan waktu lebih lama karena data belum tersedia di cache. Pemanggilan kedua menjadi jauh lebih cepat karena data sudah tersedia di Redis.
 
-Contoh output:
-
-```text
-First call result: {'city': 'Jakarta', 'temperature': 30, 'condition': 'Sunny', 'source': 'api'}
-First call: 2.00s
-
-Second call result: {'city': 'Jakarta', 'temperature': 30, 'condition': 'Sunny', 'source': 'cache'}
-Second call (cached): 0.00s
-```
-
 ### Screenshot Hasil Test
-
-Masukkan screenshot terminal yang menunjukkan hasil:
-
-```text
-First call: 2.00s
-Second call (cached): 0.00s
-```
-
-Letakkan screenshot di folder berikut:
-
-```text
-docs/screenshots/cache-test.png
-```
-
-Lalu tampilkan di dokumentasi dengan format:
-
-```markdown
-![Hasil Test Cache](docs/screenshots/cache-test.png)
-```
-
 ![Hasil Test Cache](docs/screenshots/cache-test.png)
 
 ---
